@@ -28,6 +28,7 @@ function getAllColors(req, res, next) {
         });
     })
     .catch(function (err) {
+      console.log(`${err} occurred`);
       return next(err);
     });
 }
@@ -44,6 +45,7 @@ function getLastColor(req, res, next) {
         });
     })
     .catch(function (err) {
+      console.log(`${err} occurred`);
       return next(err);
     });
 }
@@ -59,6 +61,7 @@ function addColor(req, res, next) {
     });
   })
   .catch(function (err) {
+    console.log(`${err} occurred`);
     return next(err);
   });
 }
