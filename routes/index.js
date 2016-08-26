@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/api/colors', db.getAllColors);
 router.get('/api/last_color', db.getLastColor);
-router.get('/api/last_ten', database_connection.getLastTen);
+router.get('/api/last_ten', db.getLastTen);
 router.post('/api/colors', db.addColor);
 
 module.exports = router;
