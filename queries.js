@@ -6,7 +6,7 @@ var options = {
 };
 
 var pgp = require('pg-promise')(options);
-var pgLocation = 'postgres://localhost:5432/colors';
+var pgLocation = process.env.DATABASE_URL || 'postgres://localhost:5432/colors';
 var db = pgp(pgLocation);
 
 // add query functions

@@ -1,3 +1,4 @@
+-- heroku addons:create heroku-postgresql:hobby-dev
 -- heroku pg:psql < h_colors.sql
 DROP TABLE color_selections;
 
