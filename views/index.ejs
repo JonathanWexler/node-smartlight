@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <!-- Import JQUERY to run on the client's side -->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <!-- Import the color picker -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.css">
+  <!-- Import our custom code -->
+  <script type="text/javascript" src="/javascripts/jscolor.min.js"></script>
+  <script type="text/javascript" src="/javascripts/scripts.js"></script>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+  <h1><%= title %></h1>
+  <p>Welcome to <%= title %></p>
+  <input class="jscolor">
+  <button>Save</button>
+</body>
+</html>
