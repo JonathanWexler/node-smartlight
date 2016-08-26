@@ -13,6 +13,7 @@ var db = pgp(pgLocation);
 module.exports = {
   getAllColors: getAllColors,
   getLastColor: getLastColor,
+  getLastTen: getLastTen,
   addColor: addColor,
 };
 
@@ -48,6 +49,21 @@ function getLastColor(req, res, next) {
       console.log(`${err} occurred`);
       return next(err);
     });
+}
+
+function getLastTen(req, res, next) {
+  console.log("LAST 10")
+  db.many('select * from color_selections order by id desc limit 10')
+  .then(function (data) {
+    res.status(200)
+    .json({
+      status: 'success',
+      colors: data
+    });
+  })
+  .catch(function (err) {
+    return next(err);
+  });
 }
 
 function addColor(req, res, next) {
