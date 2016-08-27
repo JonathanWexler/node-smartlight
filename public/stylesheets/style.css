@@ -25,8 +25,11 @@ h1, p, input, .box, button{
   p{
     font-size: 100px;
   }
-  input{
+  input {
+    font-size: 16px;
+  }{
     height: 200px;
+    font-size: 16px;
   }
   button{
     background-color: white;
