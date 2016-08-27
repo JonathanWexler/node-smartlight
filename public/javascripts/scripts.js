@@ -1,6 +1,6 @@
 $(document).ready(function(){
   setBackground();
-  $('button').click(function(){
+  $('.submit').click(function(){
     var color = $('.jscolor').css('background-color');
     $('body').css('background-color', color);
     color = color.split(/[,)(]/);
