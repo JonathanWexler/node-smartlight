@@ -27,7 +27,7 @@ h1, p, input, .box, button{
   }
   input, input[type="text"], input[type="number"], textarea {
     height: 200px;
-    font-size: 16px;
+    font-size: 20px;
   }
   button{
     background-color: white;
