@@ -6,3 +6,34 @@ body {
 a {
   color: #00B7FF;
 }
+
+.box{
+  width: 100%
+}
+input{
+  width: 100%;
+}
+h1, p, input, .box, button{
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px){
+  h1{
+    font-size: 200px;
+  }
+  p{
+    font-size: 100px;
+  }
+  input{
+    height: 200px;
+  }
+  button{
+    background-color: white;
+    height: 100px;
+  }
+  h1, p, input, .box, button{
+    width: 100%;
+    text-align: center;
+  }
+}
